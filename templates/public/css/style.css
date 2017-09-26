@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #edeef0;
+}
+.product-item {
+  height: 200px;
+  background-color: white;
+  position: relative;
+  border: 1px solid grey;
+}
+
+
+ .section-top {
+  margin-bottom: 20px;
+  
+}

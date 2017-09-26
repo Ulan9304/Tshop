@@ -1,0 +1,34 @@
+
+.top-container {
+    padding-top: 10%;
+    color: ;
+}
+.general-container {
+    background: url('../img/bg-image.jpg');
+    height: 100%;
+    text-align: center;
+}
+.general-container label {
+	color: white;
+	font-weight: 300;
+}
+
+.general-container form {
+	margin-top: 30px;
+}
+
+.orange-btn {
+ 	background-color: #e8643e;
+ 	border: none;
+}
+.orange-btn:hover{
+ 	background-color: #dc5129;
+ 	border: none;
+
+ }
+.title {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  line-height: 50px;
+ }
