@@ -16,7 +16,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from landing import views
-
+from django.conf.urls.static import static
+from mysite import settings
 
 urlpatterns = [
     url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
@@ -26,4 +27,6 @@ urlpatterns = [
     url(r'^', include('landing.urls')),
     url(r'^', include('products.urls')),
     url(r'^', include('orders.urls')),
-]
+] \
+                + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
+                + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

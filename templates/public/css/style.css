@@ -5,14 +5,23 @@ html, body {
     background-color: #edeef0;
 }
 .product-item {
-  height: 200px;
+  height: 350px;
   background-color: white;
   position: relative;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
+  padding: 5px;
+  text-align: center;
 }
-
-
  .section-top {
   margin-bottom: 20px;
   
+}
+
+.add-to-cart-btn { 
+   position: absolute;
+   bottom: 5px;
+   left: 40px;
+}
+.img_item {
+  width: 60%;
 }

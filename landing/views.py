@@ -7,7 +7,7 @@ from django.utils import timezone
 
 from .forms import SubscriberForm
 
-from products.models import Product
+from products.models import *
 
 # Create your views here.
 
@@ -28,9 +28,9 @@ def landing(request):
 
 
 def home(request):
-	products = Product.objects.filter(is_active=True)
+	products_images = ProductImage.objects.filter(is_active=True, is_main=True)
 	context = {
-		'products':products
+		'products_images':products_images,
 	}
 
 	return render(request, 'landing/home.html', context)

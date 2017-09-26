@@ -9,12 +9,23 @@
 		<div class="container">
 			<div class="row">
 
-				{% for item in products %}
+				{% for item in products_images %}
 				<div class="col-lg-3">
 					<div class="product-item">
-					{{ item.name}}
+						<div>
+							<img src="{{ item.image.url }}" class="img-item" width=40%;>
+						</div>
+					<h4>{{ item.product.name}}</h4>
+					<p>
+						{{ item.product.description|truncatechars_html:70 }}
+					</p>
+					<div>
+						{{ item.product.price }} SOM
+					</div>	
+					<div class="add-to-cart-btn">
+					<button class="btn btn-success">Добавить в корзину</button>
+					</div>
 				</div>
-				
 			</div>
 			{% endfor %}
 		</div>
