@@ -5,11 +5,75 @@
 	<div class="section-top">
 		<img src="{% static 'img/slider.jpg' %}" class="img-responsive">
 	</div>
-	<div class="section">
+	<div class="section section1">
 		<div class="container">
 			<div class="row">
-
+				<div class="col-lg-12">
+				<h1 class="text-center">
+					Новые поступления
+					</h1>
+				</div>
 				{% for item in products_images %}
+				<div class="col-lg-3">
+					<div class="product-item">
+						<div>
+							<img src="{{ item.image.url }}" class="img-item" width=40%;>
+						</div>
+					<h4>{{ item.product.name}}</h4>
+					<p>
+						{{ item.product.description|truncatechars_html:70 }}
+					</p>
+					<div>
+						{{ item.product.price }} SOM
+					</div>	
+					<div class="add-to-cart-btn">
+					<button class="btn btn-success">Добавить в корзину</button>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="section section2 phones-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+				<h1 class="text-center">
+					Телефоны
+					</h1>
+				</div>
+				{% for item in products_images_phones %}
+				<div class="col-lg-3">
+					<div class="product-item">
+						<div>
+							<img src="{{ item.image.url }}" class="img-item" width=40%;>
+						</div>
+					<h4>{{ item.product.name}}</h4>
+					<p>
+						{{ item.product.description|truncatechars_html:70 }}
+					</p>
+					<div>
+						{{ item.product.price }} SOM
+					</div>	
+					<div class="add-to-cart-btn">
+					<button class="btn btn-success">Добавить в корзину</button>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="section section3 laptops-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+				<h1 class="text-center">
+					Ноутбуки
+					</h1>
+				</div>
+				{% for item in products_images_laptops %}
 				<div class="col-lg-3">
 					<div class="product-item">
 						<div>

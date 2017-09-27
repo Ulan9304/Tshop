@@ -5,7 +5,7 @@ html, body {
     background-color: #edeef0;
 }
 .product-item {
-  height: 350px;
+  height: 360px;
   background-color: white;
   position: relative;
   border: 1px solid lightgrey;
@@ -24,4 +24,24 @@ html, body {
 }
 .img_item {
   width: 60%;
+}
+.section-top{
+    margin-bottom: 20px
+}
+.section{
+    padding: 50px 0;
+}
+
+.section h1{
+    margin-bottom: 40px;
+}
+.wrapper{
+    min-height: 100%;
+}
+.footer{
+    position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear: both;
+    background-color: white;
 }
